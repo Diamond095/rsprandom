@@ -1,0 +1,91 @@
+@import '@/app/styles/main.scss';
+
+.home-page-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+
+    &__button {
+        border: none;
+        outline: none;
+        color: inherit;
+        background-color: $color-primary;
+        border: 1px solid $color-border;
+        height: 3rem;
+        border-radius: 0.75rem;
+        font-family: inherit;
+        font-weight: bold;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+
+        .random-token {
+            color: $color-random;
+        }
+    }
+
+    &__button--info {
+        color: $color-ton;
+    }
+
+    &__header {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+
+        &-chance {
+            font-weight: bold;
+            font-size: 2rem;
+            position: relative;
+            text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.react-modal-sheet-header {
+    background: $color-primary;
+}
+.react-modal-sheet-content {
+    background: $color-primary;
+    padding: 1rem 2rem 2rem 2rem;
+    overflow-y: auto;
+
+    .rules-text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+    &-rule {
+        display: flex;
+        gap: 0.7rem;
+        width: 105px;
+
+        .hands-turn {
+            width:1.25rem;
+            transform: rotate(90deg);
+
+            &:nth-child(3n) {
+                transform: rotate(-90deg);
+            }
+        }
+
+        .white-arrow {
+            width: 10px;
+        }
+    }
+}

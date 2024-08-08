@@ -1,0 +1,107 @@
+@import '@/app/styles/main.scss';
+
+.wallet-page {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 2rem - 50px - 3rem);
+    justify-content: space-between;
+    .go1651228014{
+        color:white;
+    }
+    .ton-connect-button {
+        margin-bottom: 1rem; 
+
+        button {
+            width: calc(100vw - 2rem);
+            box-shadow: none;
+            height: 3rem;
+            background: $color-primary;
+            justify-content: center;
+        }
+    }
+
+    .cancel-button {
+        height: 4rem;
+        border: 1px solid $color-random;
+        margin-bottom: 1rem;
+        color: $color-text;
+        font-weight: bold;
+        border-radius: 0.75rem;
+    }
+
+    .tab-list {
+        display: flex;
+        background-color: #0f151f;
+        height: 3rem;
+        border-radius: 1.5rem;
+        font-weight: bold;
+    }
+
+    .tab {
+        width: 100%;
+        color: $color-text;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selected-tab {
+        background-color: $color-primary;
+        border-radius: 1.5rem;
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .tab-panel {
+        margin: 1rem;
+    }
+
+    .deposit-section,
+    .withdraw-section {
+        // Style for both sections
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .payment-methods {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .payment-method {
+                background: $color-primary;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex: 1;
+                aspect-ratio: 1 / 1;
+                padding: 1rem;
+
+                img {
+                    width: 3rem;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .ton-method {
+                // Specific style for the TON method
+            }
+
+            .random-method {
+                // Specific style for the RANDOM method
+            }
+        }
+    }
+}

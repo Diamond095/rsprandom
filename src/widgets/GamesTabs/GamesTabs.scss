@@ -1,0 +1,56 @@
+@import '@/app/styles/main.scss';
+
+.games-tabs {
+    display: flex;
+    flex-direction: column;
+
+    &__tab-list {
+        display: flex;
+        margin: 0 1.5rem;
+    }
+
+    &__tab {
+        outline: none;
+        padding: 0.75rem 1.5rem;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        color: rgba($color: $color-text, $alpha: 0.25);
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        gap: 0.25rem;
+
+        .material-symbols-outlined {
+            line-height: 20px;
+            font-size: 1.5rem;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &--selected {
+            border: 1px solid $color-border;
+            border-bottom: none;
+            background: #18212d;
+            border-radius: 0.75rem 0.75rem 0 0;
+            color: $color-text;
+        }
+    }
+
+    &__tab-panel {
+        &--active {
+            padding: 0.5rem;
+            background: $gradient-primary;
+            margin: 0 0.5rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            justify-content: start;
+            align-items: start;
+            height: calc(100vh - 50px - 24rem);
+            overflow-y: scroll;
+        }
+    }
+}

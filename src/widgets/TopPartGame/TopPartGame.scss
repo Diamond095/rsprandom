@@ -1,0 +1,106 @@
+/* TopPartGame.scss */
+
+.finished-win {
+    background: linear-gradient(90deg, #3b7e12 0%, rgba(3, 36, 15, 0) 100%);
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    padding-left: 0.25rem;
+}
+
+.finished-lose {
+    background: linear-gradient(90deg, #6c0921 0%, rgba(38, 1, 6, 0) 100%);
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    padding-left: 0.25rem;
+}
+
+.finished-draw {
+    background-color: grey;
+}
+
+.ongoing-turn-me {
+    background: linear-gradient(
+        90deg,
+        #18222e 0%,
+        rgba(35, 52, 72, 0.308134) 28.61%,
+        rgba(21, 33, 47, 0.0637061) 70.3%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    display: flex;
+    justify-content: start;
+}
+
+.ongoing-turn-opponent {
+    background: linear-gradient(
+        -90deg,
+        #18222e 0%,
+        rgba(35, 52, 72, 0.308134) 28.61%,
+        rgba(21, 33, 47, 0.0637061) 70.3%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    display: flex;
+    justify-content: end;
+}
+
+.result-text {
+    height: 6rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.status-text {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.timer-text {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(
+        -90deg,
+        #18222e 0%,
+        rgba(35, 52, 72, 0.308134) 28.61%,
+        rgba(21, 33, 47, 0.0637061) 70.3%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.top-part-game {
+    margin-bottom: 1.5rem;
+
+    &.game-with-bot {
+        // стили для игры с ботом
+    }
+
+    &.game-with-user {
+        // стили для игры с пользователем
+    }
+
+    .my-turn,
+    .my-turn-timer {
+        background: linear-gradient(90deg,
+        #18222e 0%,
+        rgba(35, 52, 72, 0.308134) 28.61%,
+        rgba(21, 33, 47, 0.0637061) 70.3%, 
+        rgba(0, 0, 0, 0) 100%);
+        display: flex;
+        justify-content: start;
+    }
+
+    .opponent-turn,
+    .opponent-turn-timer {
+        background: linear-gradient(
+            -90deg,
+            #18222e 0%,
+            rgba(35, 52, 72, 0.308134) 28.61%,
+            rgba(21, 33, 47, 0.0637061) 70.3%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        display: flex;
+        justify-content: end;
+        padding-right: 1rem;
+    }
+}

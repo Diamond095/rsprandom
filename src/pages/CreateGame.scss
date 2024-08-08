@@ -1,0 +1,39 @@
+@import '@/app/styles/main.scss';
+
+.create-game__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px - 4rem);
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.create-game__content {
+}
+
+.create-game__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    gap: 1rem;
+
+    .create-game__button {
+        border: none;
+        outline: none;
+        color: inherit;
+        font-size: inherit;
+        flex: 1;
+        height: 4rem;
+        border-radius: 0.75rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+
+        &--create {
+            background: $gradient-green;
+        }
+
+        &--cancel {
+            border: 1px solid $color-random;
+        }
+    }
+}

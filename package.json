@@ -1,0 +1,46 @@
+{
+    "name": "rspfront",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "@ton/core": "^0.56.3",
+        "@tonconnect/ui-react": "^2.0.6",
+        "@types/node": "^22.0.0",
+        "axios": "^1.7.3",
+        "buffer": "^6.0.3",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "laravel-echo": "^1.16.1",
+        "prettier": "^3.3.3",
+        "pusher-js": "^8.4.0-rc2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-modal-sheet": "^3.1.0",
+        "react-router-dom": "^6.25.1",
+        "react-spring-bottom-sheet": "^3.4.1",
+        "react-tabs": "^6.0.2",
+        "sass": "^1.77.8",
+        "vaul": "^0.9.1",
+        "zustand": "^4.5.4"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@typescript-eslint/eslint-plugin": "^7.15.0",
+        "@typescript-eslint/parser": "^7.15.0",
+        "@vitejs/plugin-react-swc": "^3.5.0",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.4.7",
+        "typescript": "^5.2.2",
+        "vite": "^5.3.4"
+    }
+}

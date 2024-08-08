@@ -1,0 +1,32 @@
+@import '@/app/styles/main.scss';
+
+.create-game-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+
+    &__link {
+        border: none;
+        outline: none;
+        color: inherit;
+        background: $gradient-green;
+        border-radius: 0.75rem;
+        font-family: inherit;
+        font-weight: bold;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+
+    &__button {
+        height: 4rem;
+        color: inherit;
+        font-weight: bold;
+    }
+}

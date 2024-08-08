@@ -1,0 +1,91 @@
+@import '@/app/styles/main.scss';
+
+.withdraw-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+
+    .withdraw-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: calc(100vh - 2rem - 50px - 3rem);
+        justify-content: space-between;
+
+        .quick-select {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+
+            button {
+                background: $color-primary;
+                color: $color-text;
+                padding: 0.5rem 0.75rem;
+                font-weight: bold;
+                border-radius: 0.75rem;
+            }
+        }
+    }
+
+    input {
+        background: $color-primary;
+        outline: none;
+        border: none;
+        height: 3rem;
+        border-radius: 0.75rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        color: white;
+        background-size: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: 1rem center;
+        padding-left: 3rem;
+    }
+
+    .ton-token {
+        background-image: url('@/app/assets/tokens/token_ton.png');
+    }
+
+    .random-token {
+        background-image: url('@/app/assets/tokens/token_random.png');
+    }
+
+    .no-arrows {
+        -moz-appearance: textfield; /* Firefox */
+    }
+
+    .no-arrows::-webkit-outer-spin-button,
+    .no-arrows::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .payment-navigation-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        button {
+            height: 4rem;
+            flex: 1;
+            color: $color-text;
+            border-radius: 0.75rem;
+            font-weight: bold;
+
+            &:not(.payment-button) {
+                border: 1px solid $color-random;
+            }
+
+            &.payment-button {
+                background: $gradient-random;
+            }
+        }
+    }
+}

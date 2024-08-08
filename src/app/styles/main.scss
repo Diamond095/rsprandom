@@ -1,0 +1,75 @@
+@import url('https://fonts.cdnfonts.com/css/geometria');
+
+$color-background: #121a25;
+$color-text: #fff;
+$color-primary: #1a2332;
+$color-border: #2b3b50;
+$color-random: #3da91c;
+$color-ton: #1a87c5;
+
+$gradient-ton: linear-gradient(90deg, #0088cc 50%, #0047ff 128.98%); // Example color for TON game type
+$gradient-random: linear-gradient(270.27deg, #5ABA20 0.24%, #2DA01B 98.94%);
+$gradient-primary: linear-gradient(180deg, #192331 0%, #121a25 100%);
+$gradient-green: linear-gradient(90deg, #5aba20 0%, #2da01b 100%);
+
+$gradient-win: linear-gradient(90deg, #257d12 0%, #5aba20 48%, #257d12 100%);
+$gradient-lose: linear-gradient(90deg, #6c0921 0%, #c13737 51%, #6c0921 100%);
+$gradient-default: linear-gradient(90.01deg, #212b3e 0.01%, #394e76 48%, #212b3e 99.99%);
+
+@mixin gradient-border($width, $height, $colors) {
+    width: $width;
+    height: $height;
+    border-radius: calc($height / 2);
+    background: $colors; // Pass the gradient directly here
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+* {
+    font-family: 'Geometria', sans-serif;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-background;
+    color: $color-text;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.button-animation {
+    transition: transform 0.1s ease-in-out;
+
+    &.active {
+        transform: scale(0.95);
+    }
+}

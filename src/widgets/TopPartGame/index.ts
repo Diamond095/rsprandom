@@ -1,0 +1,1 @@
+export { default as TopPartGame } from './TopPartGame';
